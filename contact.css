@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Seção TituloNome */
+.TituloNome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: var(--font-title);
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* Seção TextoPrincipal */
+.TextoPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 12%;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+/* Estilo para o Formulário de Contato */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Limitar a largura do formulário */
+    margin-top: 20px;
+
+}
+
+.contact-form label {
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    margin-bottom: 15px; /* Aumentando a margem inferior */
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical; /* Permitir o redimensionamento vertical */
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+    margin-bottom: 10px;
+}
+
+/* Seção Social Links */
+.social-links {
+    display: flex;
+    gap: 30px; /* Espaçamento entre os ícones */
+    margin: 10px;
+}
+
+.social-icon {
+    font-size: 3rem; /* Tamanho do ícone */
+    color: var(--accent-color); /* Cor do ícone */
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.social-icon:hover {
+    color: #f0f0f0; /* Cor ao passar o mouse */
+}

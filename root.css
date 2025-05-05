@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #0f0f1a;
+    --bg-secondary: #1a1a2e;
+    --text-color: #f1f1f1;
+    --accent-color: #ff2e63;
+    --highlight-color: #08d9d6;
+  }
+  
