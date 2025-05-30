@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
- 
+    height: 100%;
     min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -20,74 +20,76 @@ body {
 
 .container {
     display: flex;
-    justify-content: baseline;
     flex-direction: column;
     align-items: center;
     width: 80%;
     height: 100%;
     background-color: var(--bg-color);
+    margin-top: 100px; /* Compensa a altura do header fixo */
 }
 
 header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--font-text);
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%; 
     background-color: var(--bg-color);
     padding: 1rem 2rem;
     border-bottom: 1px solid #333;
-  }
-  
-  .navbar {
+    z-index: 1000;
+}
+
+.navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--accent-color);
-  }
-  
-  .nav-links {
+    flex-direction: column; /* Empilha logo e nav-links */
+    align-items: center;    /* Centraliza horizontalmente */
+    gap: 0.5rem;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 2rem;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: var(--accent-color);
-  }
+}
 
-  .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    margin-top: 20px;
-    border: 2px solid white;
-  }
 
-  .TituloNome {
+
+
+
+
+.TituloNome {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    margin: 20px;
+    text-align: center;
+    margin: 20px 0 5px;
     font-family: var(--font-title);
     font-size: 1.9em;
-    margin-bottom: 5px;
-  }
+}
 
-  .TextoPrincipal {
+.TextoPrincipal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,24 +97,28 @@ header {
     font-family: var(--font-text);
     font-size: 1.2em;
     text-align: center;
-    padding: 12%;
-    padding-top: 0;
+    padding: 0 12%;
     padding-bottom: 20px;
-  }
+}
 
-  .social-links {
+.social-links {
     display: flex;
-    gap: 30px; /* Espaçamento entre os ícones */
+    gap: 30px;
     margin: 10px;
-  }
-  
-  .social-icon {
-    font-size: 3rem; /* Tamanho do ícone */
-    color: var(--accent-color); /* Cor do ícone (definida no seu root.css) */
-    text-decoration: none; /* Remove sublinhado do link */
-    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
-  }
-  
-  .social-icon:hover {
-    color: #f0f0f0; /* Cor ao passar o mouse */
-  }
+}
+
+.social-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
