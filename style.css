@@ -25,7 +25,7 @@ body {
     width: 50%;
     height: 100%;
     background-color: var(--bg-color);
-    margin-top: 100px; /* Compensa a altura do header fixo */
+    margin-top: 100px;
 }
 
 header {
@@ -123,4 +123,11 @@ header {
 * {
     margin: 0;
     padding: 0;
+}
+
+.container img {
+    width: 280px;
+    height: 300px;
+    border-radius: 2em;
+    border: 2px #bdbdbd solid;
 }
