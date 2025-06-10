@@ -8,7 +8,7 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 50%;
     height: 100%;
     background-color: var(--bg-color);
     margin-top: 100px; /* Compensa a altura do header fixo */
@@ -41,7 +41,7 @@ header {
     left: 0;
     width: 100%; 
     background-color: var(--bg-color);
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     border-bottom: 1px solid #333;
     z-index: 1000;
 }
@@ -74,9 +74,6 @@ header {
 }
 
 
-
-
-
 .TituloNome {
     display: flex;
     flex-direction: column;
@@ -100,19 +97,51 @@ header {
     padding-bottom: 20px;
 }
 
-.social-links {
+.Projetos{
     display: flex;
-    gap: 30px;
-    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 12%;
+    padding-bottom: 20px;
+    margin-top: 10%;
 }
 
-.social-icon {
-    font-size: 3rem;
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+.Projetos h1 {
+    font-size: 2em;
+    text-decoration: underline;
 }
 
-.social-icon:hover {
-    color: #f0f0f0;
+.Projetos h2 {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.Projeto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    margin-top: 30px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.Projeto1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ou 'contain', dependendo do efeito desejado */
+    border-radius: 10px; /* opcional, deixa as bordas arredondadas */
+}
+
+.Projetos p {
+font-size: 1em;
+margin-top: 20px;
 }

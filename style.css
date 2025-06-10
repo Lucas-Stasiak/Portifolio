@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 50%;
     height: 100%;
     background-color: var(--bg-color);
     margin-top: 100px; /* Compensa a altura do header fixo */
@@ -41,16 +41,18 @@ header {
     left: 0;
     width: 100%; 
     background-color: var(--bg-color);
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     border-bottom: 1px solid #333;
     z-index: 1000;
 }
 
 .navbar {
     display: flex;
-    flex-direction: column; /* Empilha logo e nav-links */
-    align-items: center;    /* Centraliza horizontalmente */
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;   
+    margin: 0%;
+    padding: 0;
+    
 }
 
 .nav-links {
